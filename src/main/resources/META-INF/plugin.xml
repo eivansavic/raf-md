@@ -1,0 +1,13 @@
+<idea-plugin>
+    <id>com.raf.md.RAF-MD</id>
+    <name>RAF-MD</name>
+    <version>1.0.0</version>
+    <vendor>Računarski Fakultet</vendor>å
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.intellij.plugins.markdown</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <psi.referenceContributor implementation="com.raf.md.rafmd.CodeLinePsiReferenceContributor"
+                                  language="Markdown"/>
+    </extensions>
+</idea-plugin>
