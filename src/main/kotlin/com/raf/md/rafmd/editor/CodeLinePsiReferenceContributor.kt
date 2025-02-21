@@ -3,18 +3,14 @@ package com.raf.md.rafmd.editor
 import com.intellij.patterns.PlatformPatterns
 import com.intellij.psi.PsiReferenceContributor
 import com.intellij.psi.PsiReferenceRegistrar
-import org.intellij.plugins.markdown.lang.psi.impl.MarkdownFile
-import org.intellij.plugins.markdown.lang.psi.impl.MarkdownLinkLabel
+import org.intellij.plugins.markdown.lang.psi.impl.MarkdownLinkDestination
 
 class CodeLinePsiReferenceContributor : PsiReferenceContributor() {
 
     override fun registerReferenceProviders(registrar: PsiReferenceRegistrar) {
-        val linkDestinationPattern = PlatformPatterns
-            .psiElement(MarkdownLinkLabel::class.java)
-            .inFile(PlatformPatterns.psiFile(MarkdownFile::class.java))
-
         registrar.registerReferenceProvider(
-            linkDestinationPattern,
+            PlatformPatterns
+                .psiElement(MarkdownLinkDestination::class.java),
             CodeLinePsiReferenceProvider()
         )
     }

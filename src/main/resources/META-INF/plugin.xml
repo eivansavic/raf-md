@@ -7,7 +7,6 @@
     <depends>org.intellij.plugins.markdown</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <psi.referenceContributor implementation="com.raf.md.rafmd.editor.CodeLinePsiReferenceContributor"
-                                  language="Markdown"/>
+        <psi.referenceContributor implementation="com.raf.md.rafmd.editor.CodeLinePsiReferenceContributor"/>
     </extensions>
 </idea-plugin>
