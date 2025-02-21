@@ -1,4 +1,4 @@
-package com.raf.md.rafmd
+package com.raf.md.rafmd.editor
 
 import com.intellij.patterns.PlatformPatterns
 import com.intellij.psi.PsiReferenceContributor

@@ -1,4 +1,4 @@
-package com.raf.md.rafmd
+package com.raf.md.rafmd.editor
 
 import com.intellij.navigation.ItemPresentation
 import com.intellij.openapi.fileEditor.OpenFileDescriptor

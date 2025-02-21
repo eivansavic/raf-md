@@ -1,4 +1,4 @@
-package com.raf.md.rafmd
+package com.raf.md.rafmd.editor
 
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiElement
